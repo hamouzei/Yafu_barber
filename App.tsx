@@ -4,6 +4,7 @@ import StyleConsultant from "./components/StyleConsultant";
 import BookingModal from "./components/BookingModal";
 import OptimizedImage from "./components/OptimizedImage";
 import NewsletterForm from "./components/NewsletterForm";
+import TestimonialMarquee from "./components/TestimonialMarquee";
 import { SERVICES, BARBERS, TESTIMONIALS, BLOG_POSTS } from "./constants";
 import {
   Scissors,
@@ -361,43 +362,8 @@ const App: React.FC = () => {
               Customer Satisfaction
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-8" role="list">
-              {TESTIMONIALS.map((t) => (
-                <article
-                  key={t.id}
-                  className="bg-brand-dark/50 p-10 border border-white/5 relative"
-                  role="listitem"
-                >
-                  <div className="absolute -top-6 left-1/2 -translate-x-1/2">
-                    <img
-                      src={t.image}
-                      className="w-16 h-16 rounded-full border-4 border-brand-dark object-cover"
-                      alt={`${t.name}, satisfied customer`}
-                      loading="lazy"
-                    />
-                  </div>
-                  <div
-                    className="flex justify-center mb-6 pt-6"
-                    role="img"
-                    aria-label="5 out of 5 stars"
-                  >
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        size={16}
-                        className="text-brand-accent fill-brand-accent"
-                        aria-hidden="true"
-                      />
-                    ))}
-                  </div>
-                  <blockquote className="text-brand-lightGray italic mb-8">
-                    "{t.text}"
-                  </blockquote>
-                  <cite className="font-heading uppercase text-xl text-white not-italic">
-                    {t.name}
-                  </cite>
-                </article>
-              ))}
+            <div className="overflow-hidden">
+              <TestimonialMarquee />
             </div>
           </div>
         </section>

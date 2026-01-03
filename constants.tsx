@@ -22,6 +22,9 @@ export const TESTIMONIALS: Testimonial[] = [
   { id: 't1', name: 'Marcus Vane', text: "I won't go anywhere else. The level of precision and attention to detail here is unmatched. My fade always looks perfect.", rating: 5, image: 'https://i.pravatar.cc/150?u=marcus' },
   { id: 't2', name: 'Ryan Chen', text: "From the moment you walk in, the ambiance is excellent and the service is personalized. My barber took the time to discuss exactly what I wanted.", rating: 5, image: 'https://i.pravatar.cc/150?u=ryan' },
   { id: 't3', name: 'Gabriel Soto', text: "I trust the team at YafuBarber completely. I always leave feeling sharp and confident. The advice they give on products is always spot-on.", rating: 5, image: 'https://i.pravatar.cc/150?u=gabriel' },
+  { id: 't4', name: 'Yabsira', text: "እስካሁን ካየኋቸው ምርጥ የፀጉር አሠራር. እዚህ ያለው ትኩረት ወደር የለሽ ነው - እጅግ በጣም ንጹህ ስራ!", rating: 5, image: 'https://i.pravatar.cc/150?u=yabsira' },
+  { id: 't5', name: 'Daniel', text: "ከፍተኛ-ደረጃ አገልግሎት እና ጥሩ ስሜት። የሙቅ ፎጣ አገልግሎት ፍጹም አጨራረስ ነበር። እመለሳለሁ!", rating: 5, image: 'https://i.pravatar.cc/150?u=daniel' },
+  { id: 't6', name: 'Boonaa', text: "Dhumarratti bakka amanamaa argadhe. Ogeessi sa'aatii kan eegu yoo ta'u, Boonaa fakkaadheen ba'e. Baayyee bareeda", rating: 5, image: 'https://i.pravatar.cc/150?u=boonaa' },
 ];
 
 export const BLOG_POSTS: BlogPost[] = [
