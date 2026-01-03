@@ -30,7 +30,7 @@ export default async function handler(req: any, res: any) {
       Act as a master barber and provide a concise, high-end recommendation for a style, hair product, 
       and how often I should visit the shop. Keep it professional and stylish.`,
       config: {
-        systemInstruction: 'You are an elite master barber at BuzzCut, a luxury grooming studio.',
+        systemInstruction: 'You are an elite master barber at YafuBarber, a luxury grooming studio.',
         maxOutputTokens: 300,
       },
     });

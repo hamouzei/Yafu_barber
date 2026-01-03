@@ -52,19 +52,19 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
               <p className="flex items-center justify-center gap-2">
                 <span className="text-brand-accent">📞</span>
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+251931658066"
                   className="hover:text-brand-accent transition-colors"
                 >
-                  +1 (234) 567-890
+                  +251931658066
                 </a>
               </p>
               <p className="flex items-center justify-center gap-2">
                 <span className="text-brand-accent">✉️</span>
                 <a
-                  href="mailto:hello@buzzcut.com"
+                  href="mailto:yafubarber66@gmail.com"
                   className="hover:text-brand-accent transition-colors"
                 >
-                  hello@buzzcut.com
+                  yafubarber66@gmail.com
                 </a>
               </p>
             </div>

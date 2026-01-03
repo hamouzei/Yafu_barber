@@ -1,6 +1,6 @@
 # Advanced Features Implementation Guide
 
-This guide covers the setup and usage of all advanced features added to the BuzzCut barbershop website.
+This guide covers the setup and usage of all advanced features added to the YafuBarber barbershop website.
 
 ---
 

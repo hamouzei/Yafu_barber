@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines how to integrate a headless CMS for the BuzzCut blog section. The current implementation uses static data from `constants.tsx`, but can be easily upgraded to a dynamic CMS.
+This document outlines how to integrate a headless CMS for the YafuBarber blog section. The current implementation uses static data from `constants.tsx`, but can be easily upgraded to a dynamic CMS.
 
 ## Recommended CMS Options
 

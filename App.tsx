@@ -143,7 +143,7 @@ const App: React.FC = () => {
           </div>
           <div>
             <span className="text-brand-accent font-heading uppercase tracking-widest mb-4 block">
-              About BuzzCut
+              About YafuBarber
             </span>
             <h2 className="text-4xl md:text-5xl font-heading uppercase mb-8 leading-tight">
               Crafting Timeless Styles <br /> With a Modern Touch
@@ -506,7 +506,7 @@ const App: React.FC = () => {
             <div className="grid md:grid-cols-4 gap-12 mb-20">
               <div className="col-span-1 md:col-span-1">
                 <span className="text-4xl font-bold font-heading italic tracking-tighter text-white block mb-8">
-                  Buzz<span className="text-brand-accent">Cut</span>
+                  Yafu<span className="text-brand-accent">Barber</span>
                 </span>
                 <p className="text-brand-lightGray mb-8 leading-relaxed">
                   Dedicated to the art of classic grooming and modern style. We
@@ -622,7 +622,7 @@ const App: React.FC = () => {
                       size={20}
                     />
                     <span className="text-brand-lightGray">
-                      +1 (234) 567-890
+                      +251931658066
                     </span>
                   </li>
                   <li className="flex gap-4">
@@ -631,7 +631,7 @@ const App: React.FC = () => {
                       size={20}
                     />
                     <span className="text-brand-lightGray">
-                      hello@buzzcut.com
+                      yafubarber66@gmail.com
                     </span>
                   </li>
                 </ul>
@@ -649,7 +649,7 @@ const App: React.FC = () => {
             </div>
 
             <div className="border-t border-white/5 pt-12 text-center text-brand-lightGray text-sm tracking-widest uppercase">
-              &copy; 2025 BuzzCut Premium Grooming. All rights reserved. |{" "}
+              &copy; 2025 YafuBarber Premium Grooming. All rights reserved. |{" "}
               <a href="#" className="hover:text-brand-accent transition-colors">
                 Privacy Policy
               </a>

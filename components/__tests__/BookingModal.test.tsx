@@ -32,8 +32,8 @@ describe("BookingModal", () => {
   it("should display contact information", () => {
     render(<BookingModal isOpen={true} onClose={() => {}} />);
 
-    expect(screen.getByText(/\+1 \(234\) 567-890/)).toBeInTheDocument();
-    expect(screen.getByText(/hello@buzzcut.com/)).toBeInTheDocument();
+    expect(screen.getByText(/\+251931658066/)).toBeInTheDocument();
+    expect(screen.getByText(/yafubarber66@gmail.com/)).toBeInTheDocument();
   });
 
   it("should have proper accessibility attributes", () => {

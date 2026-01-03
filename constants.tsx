@@ -21,11 +21,11 @@ export const BARBERS: Barber[] = [
 export const TESTIMONIALS: Testimonial[] = [
   { id: 't1', name: 'Marcus Vane', text: "I won't go anywhere else. The level of precision and attention to detail here is unmatched. My fade always looks perfect.", rating: 5, image: 'https://i.pravatar.cc/150?u=marcus' },
   { id: 't2', name: 'Ryan Chen', text: "From the moment you walk in, the ambiance is excellent and the service is personalized. My barber took the time to discuss exactly what I wanted.", rating: 5, image: 'https://i.pravatar.cc/150?u=ryan' },
-  { id: 't3', name: 'Gabriel Soto', text: "I trust the team at BuzzCut completely. I always leave feeling sharp and confident. The advice they give on products is always spot-on.", rating: 5, image: 'https://i.pravatar.cc/150?u=gabriel' },
+  { id: 't3', name: 'Gabriel Soto', text: "I trust the team at YafuBarber completely. I always leave feeling sharp and confident. The advice they give on products is always spot-on.", rating: 5, image: 'https://i.pravatar.cc/150?u=gabriel' },
 ];
 
 export const BLOG_POSTS: BlogPost[] = [
-  { id: '1', title: 'Clipper Chronicles: Navigating the world of Buzzcuts', category: 'Trends', date: 'December 20, 2024', comments: 12, image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=800&auto=format&fit=crop' },
+  { id: '1', title: 'Clipper Chronicles: Navigating the world of Haircuts', category: 'Trends', date: 'December 20, 2024', comments: 12, image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=800&auto=format&fit=crop' },
   { id: '2', title: 'Taming the Mane: A guide to long hair for men', category: 'Grooming', date: 'December 18, 2024', comments: 8, image: 'https://images.unsplash.com/photo-1593702295094-ada74ca4a49a?q=80&w=800&auto=format&fit=crop' },
   { id: '3', title: 'Unveiling the Secrets: Hair studio etiquette for clients', category: 'Lifestyle', date: 'December 15, 2024', comments: 15, image: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=800&auto=format&fit=crop' },
 ];

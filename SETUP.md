@@ -84,7 +84,7 @@ app.post("/api/style-advice", async (req, res) => {
       model: "gemini-1.5-flash",
       contents: `I am a client looking for a premium haircut advice. My description: "${query}". Act as a master barber and provide a concise, high-end recommendation.`,
       config: {
-        systemInstruction: "You are an elite master barber at BuzzCut.",
+        systemInstruction: "You are an elite master barber at YafuBarber.",
         maxOutputTokens: 300,
       },
     });

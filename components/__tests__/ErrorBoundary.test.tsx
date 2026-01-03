@@ -66,9 +66,9 @@ describe("ErrorBoundary", () => {
     );
 
     const contactLink = screen.getByRole("link", {
-      name: /hello@buzzcut.com/i,
+      name: /yafubarber66@gmail.com/i,
     });
-    expect(contactLink).toHaveAttribute("href", "mailto:hello@buzzcut.com");
+    expect(contactLink).toHaveAttribute("href", "mailto:yafubarber66@gmail.com");
   });
 
   it("should have proper accessibility attributes", () => {

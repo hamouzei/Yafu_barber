@@ -1,4 +1,4 @@
-# BuzzCut - Premium Grooming Experience
+# YafuBarber - Premium Grooming Experience
 
 A modern, luxurious barber shop website featuring:
 

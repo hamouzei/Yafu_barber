@@ -41,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({ onBookingClick }) => {
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <span className="text-2xl font-bold font-heading italic tracking-tighter text-white">
-            Buzz<span className="text-brand-accent">Cut</span>
+            Yafu<span className="text-brand-accent">Barber</span>
           </span>
         </div>
 

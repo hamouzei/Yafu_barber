@@ -95,10 +95,10 @@ export default class ErrorBoundary extends React.Component<
             <p className="text-sm text-brand-lightGray mt-8">
               If this problem persists, please contact us at{" "}
               <a
-                href="mailto:hello@buzzcut.com"
+                href="mailto:yafubarber66@gmail.com"
                 className="text-brand-accent hover:underline focus:outline-none focus:ring-2 focus:ring-brand-accent"
               >
-                hello@buzzcut.com
+                yafubarber66@gmail.com
               </a>
             </p>
           </div>
