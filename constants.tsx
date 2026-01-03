@@ -2,14 +2,14 @@
 import { Service, Barber, Testimonial, BlogPost } from './types';
 
 export const SERVICES: Service[] = [
-  { id: 'h1', category: 'Haircuts', name: 'Basic Haircut', price: '$25', description: 'A clean, quick cut using clippers and shears. Includes neckline cleanup.' },
-  { id: 'h2', category: 'Haircuts', name: 'Style and Trim', price: '$35', description: 'A detailed cut including wash and condition. Focuses on layering and length.' },
-  { id: 'h3', category: 'Haircuts', name: 'Executive Cut', price: '$45', description: 'Our premium precision haircut. Includes consultation, tailored beard trim, and hot towel.' },
-  { id: 'h4', category: 'Haircuts', name: 'Buzz Cut Haircut', price: '$20', description: 'Uniform length on the entire head with clippers. Quick, clean, and low maintenance.' },
-  { id: 'b1', category: 'Beard Grooming', name: 'Beard Trim', price: '$15', description: 'Quick and clean shaping of the beard length using clippers and scissors.' },
-  { id: 'b2', category: 'Beard Grooming', name: 'Precision Beard Sculpting', price: '$25', description: 'Detailed shaping and outlining using multiple guards and a straight razor.' },
-  { id: 'b3', category: 'Beard Grooming', name: 'Hot Towel Beard', price: '$20', description: 'The ultimate beard treatment. Includes a trim, detailed shape-up, and hot towel.' },
-  { id: 'b4', category: 'Beard Grooming', name: 'Deluxe Beard Package', price: '$40', description: 'Combines the precision sculpting service with a deep conditioning beard wash.' },
+  { id: 'h1', category: 'Haircuts', name: 'Basic Haircut', price: '250 ETB', description: 'A clean, quick cut using clippers and shears. Includes neckline cleanup.' },
+  { id: 'h2', category: 'Haircuts', name: 'Style and Trim', price: '350 ETB', description: 'A detailed cut including wash and condition. Focuses on layering and length.' },
+  { id: 'h3', category: 'Haircuts', name: 'Executive Cut', price: '450 ETB', description: 'Our premium precision haircut. Includes consultation, tailored beard trim, and hot towel.' },
+  { id: 'h4', category: 'Haircuts', name: 'Buzz Cut Haircut', price: '200 ETB', description: 'Uniform length on the entire head with clippers. Quick, clean, and low maintenance.' },
+  { id: 'b1', category: 'Beard Grooming', name: 'Beard Trim', price: '150 ETB', description: 'Quick and clean shaping of the beard length using clippers and scissors.' },
+  { id: 'b2', category: 'Beard Grooming', name: 'Precision Beard Sculpting', price: '250 ETB', description: 'Detailed shaping and outlining using multiple guards and a straight razor.' },
+  { id: 'b3', category: 'Beard Grooming', name: 'Hot Towel Beard', price: '200 ETB', description: 'The ultimate beard treatment. Includes a trim, detailed shape-up, and hot towel.' },
+  { id: 'b4', category: 'Beard Grooming', name: 'Deluxe Beard Package', price: '400 ETB', description: 'Combines the precision sculpting service with a deep conditioning beard wash.' },
 ];
 
 export const BARBERS: Barber[] = [

@@ -75,9 +75,12 @@ const App: React.FC = () => {
               >
                 Book Appointment
               </button>
-              <button
+              <a
+                href="https://www.tiktok.com/@yafu390?_r=1&_t=ZM-92lsBvpDvBL"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-4 group focus:outline-none focus:ring-4 focus:ring-white/50 rounded-full"
-                aria-label="Watch our story video"
+                aria-label="Watch our story on TikTok"
               >
                 <span className="w-14 h-14 rounded-full border border-white/30 flex items-center justify-center group-hover:border-brand-accent group-focus:border-brand-accent transition-all">
                   <Play className="fill-white group-hover:fill-brand-accent w-4 h-4" />
@@ -85,7 +88,7 @@ const App: React.FC = () => {
                 <span className="text-sm font-bold uppercase tracking-widest">
                   Watch Story
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </section>
