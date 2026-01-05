@@ -104,7 +104,7 @@ const App: React.FC = () => {
               ].map((brand, index) => (
                 <span
                   key={index}
-                  className="text-base md:text-lg font-heading font-bold text-white tracking-widest text-center"
+                  className="text-base md:text-lg font-heading font-bold text-gray tracking-widest text-center"
                 >
                   {brand}
                 </span>
@@ -322,7 +322,7 @@ const App: React.FC = () => {
         >
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1512690196236-7afd8b50e687?q=80&w=2000&auto=format&fit=crop"
+              src="https://unsplash.com/photos/red-and-black-leather-office-rolling-chair-XTAtx9UhNBo"
               className="w-full h-full object-cover opacity-20"
               alt="Luxury barbershop appointment booking"
               loading="lazy"
