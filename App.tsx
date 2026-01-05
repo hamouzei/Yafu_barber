@@ -5,7 +5,7 @@ import BookingModal from "./components/BookingModal";
 import OptimizedImage from "./components/OptimizedImage";
 import NewsletterForm from "./components/NewsletterForm";
 import TestimonialMarquee from "./components/TestimonialMarquee";
-import { SERVICES, BARBERS, TESTIMONIALS, BLOG_POSTS } from "./constants";
+import { SERVICES, BARBERS, TESTIMONIALS } from "./constants";
 import {
   Scissors,
   Calendar,
@@ -62,11 +62,6 @@ const App: React.FC = () => {
               Where Style <br />
               <span className="text-brand-accent">Meets Mastery</span>
             </h1>
-            <p className="text-lg md:text-xl text-brand-lightGray mb-10 max-w-2xl mx-auto">
-              Experience the difference of a professional touch. Our master
-              barbers combine classic grooming traditions with contemporary
-              style.
-            </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <button
                 onClick={() => setIsBookingModalOpen(true)}
@@ -99,18 +94,17 @@ const App: React.FC = () => {
             <p className="text-center text-xs uppercase tracking-[0.4em] text-brand-lightGray mb-8">
               Collaborating with Premium Brands
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all">
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-100">
               {[
-                "Bullseye",
-                "Browth",
-                "Brant",
-                "Bright",
-                "Bavin",
-                "Balatto",
-              ].map((brand) => (
+                "Local coffee culture",
+                "Street fashion",
+                "Custom tailoring",
+                "Grooming suppliers",
+                "Natural oils",
+              ].map((brand, index) => (
                 <span
-                  key={brand}
-                  className="text-2xl font-heading font-bold text-white tracking-widest"
+                  key={index}
+                  className="text-base md:text-lg font-heading font-bold text-white tracking-widest text-center"
                 >
                   {brand}
                 </span>
@@ -150,7 +144,7 @@ const App: React.FC = () => {
               About YafuBarber
             </span>
             <h2 className="text-4xl md:text-5xl font-heading uppercase mb-8 leading-tight">
-              Crafting Timeless Styles <br /> With a Modern Touch
+              Where Fresh Cuts Meet Confidence
             </h2>
             <div className="space-y-8">
               <div className="flex gap-6">
@@ -159,11 +153,10 @@ const App: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-heading uppercase text-xl mb-2">
-                    Expert Craftsmanship
+                    ✂️ Skill You Can See
                   </h4>
                   <p className="text-brand-lightGray">
-                    Our barbers are seasoned masters of the trade. We combine
-                    decades of training with the latest techniques.
+                    Our barbers don’t rush styles — they perfect them. From clean fades to classic looks, we blend experience with today’s trends to get it right every time.
                   </p>
                 </div>
               </div>
@@ -173,11 +166,10 @@ const App: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-heading uppercase text-xl mb-2">
-                    Personalized Service
+                    🧠 Cuts That Fit You
                   </h4>
                   <p className="text-brand-lightGray">
-                    We treat every appointment as a one-on-one consultation.
-                    Your barber takes time to listen to your needs.
+                    No copy-paste haircuts here. We listen, suggest, and tailor each cut to your face, your vibe, and your lifestyle.
                   </p>
                 </div>
               </div>
@@ -187,15 +179,19 @@ const App: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-heading uppercase text-xl mb-2">
-                    Exceptional Ambiance
+                    🕺 A Place You Want to Stay
                   </h4>
                   <p className="text-brand-lightGray">
-                    Step into a space designed for relaxation and refinement.
-                    Enjoy a comfortable, stylish environment.
+                    Relaxed. Clean. Good energy.
+                    Step in, sit back, and enjoy a space built for comfort — where looking fresh feels easy.
                   </p>
                 </div>
               </div>
             </div>
+            <p className="text-brand-lightGray mt-8 leading-relaxed">
+              At YafuBarber, it’s more than a haircut — it’s how you show up to the world.
+              Every cut is sharp, every detail intentional, and every client treated like a regular from day one.
+            </p>
           </div>
         </section>
 
@@ -204,7 +200,7 @@ const App: React.FC = () => {
           <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
             <div>
               <div className="text-5xl font-heading text-brand-accent mb-2">
-                25+
+                5+
               </div>
               <div className="text-xs uppercase tracking-widest text-brand-lightGray">
                 Professional Barbers
@@ -228,7 +224,7 @@ const App: React.FC = () => {
             </div>
             <div>
               <div className="text-5xl font-heading text-brand-accent mb-2">
-                76+
+                476+
               </div>
               <div className="text-xs uppercase tracking-widest text-brand-lightGray">
                 Happy Customers
@@ -419,53 +415,6 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* Blog Section */}
-        <section className="py-24 bg-brand-gray/10">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <span className="text-brand-accent font-heading uppercase tracking-widest mb-4 block">
-                Blog
-              </span>
-              <h2 className="text-4xl md:text-5xl font-heading uppercase">
-                Our Latest News
-              </h2>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {BLOG_POSTS.map((post) => (
-                <article key={post.id} className="group">
-                  <div className="overflow-hidden mb-6 aspect-video">
-                    <OptimizedImage
-                      src={post.image}
-                      alt={`${post.title} - ${post.category} article`}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      width={800}
-                      height={450}
-                    />
-                  </div>
-                  <div className="flex gap-4 text-xs uppercase tracking-widest text-brand-lightGray mb-4">
-                    <time dateTime={post.date}>{post.date}</time>
-                    <span className="text-brand-accent" aria-hidden="true">
-                      /
-                    </span>
-                    <span>{post.comments} Comments</span>
-                  </div>
-                  <h3 className="text-xl font-heading uppercase leading-tight mb-4 group-hover:text-brand-accent transition-colors">
-                    {post.title}
-                  </h3>
-                  <a
-                    href="#"
-                    className="text-xs uppercase font-bold tracking-[0.2em] border-b border-brand-accent pb-1 hover:text-brand-accent focus:outline-none focus:ring-2 focus:ring-brand-accent"
-                    aria-label={`Read more about ${post.title}`}
-                  >
-                    Read More
-                  </a>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Footer */}
         <footer
           id="footer"
@@ -582,7 +531,7 @@ const App: React.FC = () => {
                       size={20}
                     />
                     <span className="text-brand-lightGray">
-                      123 Grooming Lane, <br /> Style District, NY 10001
+                      Near Mina Mall, <br /> on top of CBE Bank (3rd floor)
                     </span>
                   </li>
                   <li className="flex gap-4">
@@ -590,9 +539,7 @@ const App: React.FC = () => {
                       className="text-brand-accent flex-shrink-0"
                       size={20}
                     />
-                    <span className="text-brand-lightGray">
-                      +251931658066
-                    </span>
+                    <span className="text-brand-lightGray">+251931658066</span>
                   </li>
                   <li className="flex gap-4">
                     <Mail
