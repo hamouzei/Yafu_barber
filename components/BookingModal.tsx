@@ -26,30 +26,25 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
           </button>
         </div>
 
-        {/* Coming Soon Content */}
-        <div className="p-10 text-center space-y-6">
-          <div className="flex justify-center">
-            <div className="w-20 h-20 rounded-full bg-brand-accent/10 flex items-center justify-center">
-              <Calendar className="text-brand-accent" size={40} />
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-3xl font-heading uppercase text-white mb-3">
+        {/* Main Content */}
+        <div className="p-6 text-center space-y-4">
+          {/* Coming Soon Content - smaller */}
+          <div className="mb-6">
+            <h3 className="text-xl font-heading uppercase text-white mb-2">
               Coming Soon
             </h3>
-            <p className="text-brand-lightGray leading-relaxed">
-              Our online booking system is currently under development. We're
-              working hard to bring you a seamless appointment experience.
+            <p className="text-brand-lightGray text-sm">
+              Online booking system under development
             </p>
           </div>
 
+          {/* Contact Information */}
           <div className="pt-4 border-t border-white/10">
-            <p className="text-sm font-medium text-white mb-3 uppercase tracking-wider">
+            <p className="text-xs font-medium text-white mb-3 uppercase tracking-wider">
               Book Your Appointment Now:
             </p>
-            <div className="space-y-2 text-brand-lightGray">
-              <p className="flex items-center justify-center gap-2">
+            <div className="text-brand-lightGray">
+              <p className="flex items-center justify-center gap-2 mb-3">
                 <span className="text-brand-accent">📞</span>
                 <a
                   href="tel:+251931658066"
@@ -58,24 +53,38 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
                   +251931658066
                 </a>
               </p>
-              <p className="flex items-center justify-center gap-2">
-                <span className="text-brand-accent">✉️</span>
-                <a
-                  href="mailto:yafubarber66@gmail.com"
-                  className="hover:text-brand-accent transition-colors"
-                >
-                  yafubarber66@gmail.com
-                </a>
-              </p>
+            </div>
+
+            <div className="pt-4">
+              <button
+                onClick={() => window.open('https://maps.app.goo.gl/v2cvj9GccopspRSc7', '_blank')}
+                className="w-full bg-brand-accent hover:bg-white hover:text-brand-dark text-white font-bold py-3 uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 mb-3"
+                aria-label="Get directions to YafuBarber"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-map-pin">
+                  <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                Get Directions
+              </button>
             </div>
           </div>
 
-          <button
-            onClick={onClose}
-            className="w-full bg-brand-accent hover:bg-white hover:text-brand-dark text-white font-bold py-3 uppercase tracking-widest transition-all duration-300"
-          >
-            Close
-          </button>
+          {/* Two buttons side by side */}
+          <div className="grid grid-cols-2 gap-3 pt-4">
+            <a
+              href="tel:+251931658066"
+              className="bg-brand-accent hover:bg-white hover:text-brand-dark text-white font-bold py-2.5 uppercase tracking-widest transition-all duration-300 text-sm"
+            >
+              Call Now
+            </a>
+            <button
+              onClick={onClose}
+              className="bg-brand-gray hover:bg-brand-accent text-white font-bold py-2.5 uppercase tracking-widest transition-all duration-300 text-sm"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
