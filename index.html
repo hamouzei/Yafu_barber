@@ -17,10 +17,10 @@
           extend: {
             colors: {
               brand: {
-                dark: "#1A1A1A",
-                accent: "#FF6330",
-                gray: "#2A2A2A",
-                lightGray: "#9CA3AF",
+                dark: "var(--brand-dark)",
+                accent: "var(--brand-accent)",
+                gray: "var(--brand-gray)",
+                lightGray: "var(--brand-lightGray)",
               },
             },
             fontFamily: {
@@ -32,9 +32,29 @@
       };
     </script>
     <style>
+      :root {
+        /* Dark theme (default) */
+        --bg-color: #1a1a1a;
+        --text-color: #ffffff;
+        --brand-dark: #1a1a1a;
+        --brand-accent: #FF6330;
+        --brand-gray: #2A2A2A;
+        --brand-lightGray: #9CA3AF;
+      }
+
+      .light {
+        /* Light theme */
+        --bg-color: #ffffff;
+        --text-color: #1a1a1a;
+        --brand-dark: #ffffff;
+        --brand-accent: #FF6330;
+        --brand-gray: #f3f4f6;
+        --brand-lightGray: #6b7280;
+      }
+
       body {
-        background-color: #1a1a1a;
-        color: #ffffff;
+        background-color: var(--bg-color);
+        color: var(--text-color);
         font-family: "Inter", sans-serif;
       }
       .font-heading {
@@ -44,10 +64,10 @@
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #1a1a1a;
+        background: var(--bg-color);
       }
       ::-webkit-scrollbar-thumb {
-        background: #ff6330;
+        background: var(--brand-accent);
         border-radius: 4px;
       }
       /* Screen reader only - visible only on focus for accessibility */

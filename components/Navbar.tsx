@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 interface NavbarProps {
   onBookingClick?: () => void;
@@ -55,6 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({ onBookingClick }) => {
               {link.name}
             </a>
           ))}
+          <ThemeToggle />
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -88,6 +90,7 @@ const Navbar: React.FC<NavbarProps> = ({ onBookingClick }) => {
                 {link.name}
               </a>
             ))}
+            <ThemeToggle />
             <button
               onClick={onBookingClick}
               className="bg-brand-accent hover:bg-white hover:text-brand-dark text-white px-6 py-3 text-xs font-bold uppercase transition-all duration-300 w-full mt-4"

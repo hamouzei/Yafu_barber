@@ -153,10 +153,12 @@ const App: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-heading uppercase text-xl mb-2">
-                    ✂️ Skill You Can See
+                    Skill You Can See
                   </h4>
                   <p className="text-brand-lightGray">
-                    Our barbers don’t rush styles — they perfect them. From clean fades to classic looks, we blend experience with today’s trends to get it right every time.
+                    Our barbers don’t rush styles, they perfect them. From clean
+                    fades to classic looks, we blend experience with today’s
+                    trends to get it right every time.
                   </p>
                 </div>
               </div>
@@ -166,10 +168,11 @@ const App: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-heading uppercase text-xl mb-2">
-                    🧠 Cuts That Fit You
+                    Cuts That Fit You
                   </h4>
                   <p className="text-brand-lightGray">
-                    No copy-paste haircuts here. We listen, suggest, and tailor each cut to your face, your vibe, and your lifestyle.
+                    No copy-paste haircuts here. We listen, suggest, and tailor
+                    each cut to your face, your vibe, and your lifestyle.
                   </p>
                 </div>
               </div>
@@ -179,18 +182,19 @@ const App: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-heading uppercase text-xl mb-2">
-                    🕺 A Place You Want to Stay
+                    A Place You Want to Stay
                   </h4>
                   <p className="text-brand-lightGray">
-                    Relaxed. Clean. Good energy.
-                    Step in, sit back, and enjoy a space built for comfort — where looking fresh feels easy.
+                    Relaxed. Clean. Good energy. Step in, sit back, and enjoy a
+                    space built for comfort — where looking fresh feels easy.
                   </p>
                 </div>
               </div>
             </div>
             <p className="text-brand-lightGray mt-8 leading-relaxed">
-              At YafuBarber, it’s more than a haircut — it’s how you show up to the world.
-              Every cut is sharp, every detail intentional, and every client treated like a regular from day one.
+              At YafuBarber, it’s more than a haircut — it’s how you show up to
+              the world. Every cut is sharp, every detail intentional, and every
+              client treated like a regular from day one.
             </p>
           </div>
         </section>
