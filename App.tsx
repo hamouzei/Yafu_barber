@@ -116,86 +116,93 @@ const App: React.FC = () => {
         {/* About Section */}
         <section
           id="about"
-          className="py-24 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center"
+          className="py-12 md:py-24 max-w-7xl mx-auto px-4 md:px-6"
         >
-          <div className="relative group">
-            <div
-              className="absolute -inset-4 border-2 border-brand-accent/20 rounded-lg group-hover:border-brand-accent/50 transition-all"
-              aria-hidden="true"
-            ></div>
-            <OptimizedImage
-              src="https://images.unsplash.com/photo-1593702295094-ada74ca4a49a?q=80&w=1200&auto=format&fit=crop"
-              alt="Master barber performing precision haircut"
-              className="relative rounded-lg w-full h-[600px] object-cover"
-              width={1200}
-              height={600}
-            />
-            <div className="absolute bottom-10 left-10 bg-brand-accent p-8 rounded-sm shadow-2xl">
-              <h3 className="text-4xl font-heading uppercase text-white">
-                15+ Years
-              </h3>
-              <p className="text-xs uppercase tracking-widest text-white/80">
-                Experience in Craft
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+            {/* Image - Order 2 on mobile, Order 1 on desktop */}
+            <div className="relative group order-2 md:order-1">
+              <div
+                className="absolute -inset-2 md:-inset-4 border-2 border-brand-accent/20 rounded-lg group-hover:border-brand-accent/50 transition-all"
+                aria-hidden="true"
+              ></div>
+              <OptimizedImage
+                src="https://images.unsplash.com/photo-1593702295094-ada74ca4a49a?q=80&w=1200&auto=format&fit=crop"
+                alt="Master barber performing precision haircut"
+                className="relative rounded-lg w-full h-[300px] md:h-[600px] object-cover"
+                width={1200}
+                height={600}
+              />
+              <div className="absolute bottom-4 left-4 md:bottom-10 md:left-10 bg-brand-accent p-4 md:p-8 rounded-sm shadow-2xl">
+                <h3 className="text-2xl md:text-4xl font-heading uppercase text-white">
+                  15+ Years
+                </h3>
+                <p className="text-xs uppercase tracking-widest text-white/80">
+                  Experience in Craft
+                </p>
+              </div>
+            </div>
+
+            {/* Text Content - Order 1 on mobile, Order 2 on desktop */}
+            <div className="order-1 md:order-2">
+              <span className="text-brand-accent font-heading uppercase tracking-widest mb-3 md:mb-4 block text-sm">
+                About YafuBarber
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading uppercase mb-6 md:mb-8 leading-tight">
+                Where Fresh Cuts Meet Confidence
+              </h2>
+              <div className="space-y-5 md:space-y-8">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full bg-brand-gray border border-white/10 flex items-center justify-center text-brand-accent">
+                    <Scissors className="w-4 h-4 md:w-5 md:h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-heading uppercase text-base md:text-xl mb-1 md:mb-2">
+                      Skill You Can See
+                    </h4>
+                    <p className="text-brand-lightGray text-sm md:text-base">
+                      Our barbers don't rush styles, they perfect them. From
+                      clean fades to classic looks, we blend experience with
+                      today's trends to get it right every time.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full bg-brand-gray border border-white/10 flex items-center justify-center text-brand-accent">
+                    <User className="w-4 h-4 md:w-5 md:h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-heading uppercase text-base md:text-xl mb-1 md:mb-2">
+                      Cuts That Fit You
+                    </h4>
+                    <p className="text-brand-lightGray text-sm md:text-base">
+                      No copy-paste haircuts here. We listen, suggest, and
+                      tailor each cut to your face, your vibe, and your
+                      lifestyle.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full bg-brand-gray border border-white/10 flex items-center justify-center text-brand-accent">
+                    <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-heading uppercase text-base md:text-xl mb-1 md:mb-2">
+                      A Place You Want to Stay
+                    </h4>
+                    <p className="text-brand-lightGray text-sm md:text-base">
+                      Relaxed. Clean. Good energy. Step in, sit back, and enjoy
+                      a space built for comfort — where looking fresh feels
+                      easy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p className="text-brand-lightGray mt-6 md:mt-8 leading-relaxed text-sm md:text-base">
+                At YafuBarber, it's more than a haircut — it's how you show up
+                to the world. Every cut is sharp, every detail intentional, and
+                every client treated like a regular from day one.
               </p>
             </div>
-          </div>
-          <div>
-            <span className="text-brand-accent font-heading uppercase tracking-widest mb-4 block">
-              About YafuBarber
-            </span>
-            <h2 className="text-4xl md:text-5xl font-heading uppercase mb-8 leading-tight">
-              Where Fresh Cuts Meet Confidence
-            </h2>
-            <div className="space-y-8">
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-gray border border-white/10 flex items-center justify-center text-brand-accent">
-                  <Scissors size={20} />
-                </div>
-                <div>
-                  <h4 className="font-heading uppercase text-xl mb-2">
-                    Skill You Can See
-                  </h4>
-                  <p className="text-brand-lightGray">
-                    Our barbers don’t rush styles, they perfect them. From clean
-                    fades to classic looks, we blend experience with today’s
-                    trends to get it right every time.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-gray border border-white/10 flex items-center justify-center text-brand-accent">
-                  <User size={20} />
-                </div>
-                <div>
-                  <h4 className="font-heading uppercase text-xl mb-2">
-                    Cuts That Fit You
-                  </h4>
-                  <p className="text-brand-lightGray">
-                    No copy-paste haircuts here. We listen, suggest, and tailor
-                    each cut to your face, your vibe, and your lifestyle.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-gray border border-white/10 flex items-center justify-center text-brand-accent">
-                  <CheckCircle2 size={20} />
-                </div>
-                <div>
-                  <h4 className="font-heading uppercase text-xl mb-2">
-                    A Place You Want to Stay
-                  </h4>
-                  <p className="text-brand-lightGray">
-                    Relaxed. Clean. Good energy. Step in, sit back, and enjoy a
-                    space built for comfort — where looking fresh feels easy.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <p className="text-brand-lightGray mt-8 leading-relaxed">
-              At YafuBarber, it’s more than a haircut — it’s how you show up to
-              the world. Every cut is sharp, every detail intentional, and every
-              client treated like a regular from day one.
-            </p>
           </div>
         </section>
 
