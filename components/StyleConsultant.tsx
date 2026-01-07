@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Loader2, Wand2 } from "lucide-react";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const StyleConsultant: React.FC = () => {
   const [query, setQuery] = useState("");
@@ -10,33 +11,44 @@ const StyleConsultant: React.FC = () => {
     if (!query.trim()) return;
     setLoading(true);
     try {
-      const response = await fetch("/api/style-advice", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ query }),
-      });
+      const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
-      const data = await response.json();
-
-      if (!response.ok) {
+      if (!apiKey) {
         setRecommendation(
-          data.recommendation ||
-            data.error ||
-            "I'm having trouble coming up with a style right now. Why don't you visit us for a live consultation?"
+          "AI service is not configured. Please visit us for a live consultation at YafuBarber!"
         );
+        setLoading(false);
         return;
       }
 
+      const genAI = new GoogleGenerativeAI(apiKey);
+      const model = genAI.getGenerativeModel({
+        model: "gemini-1.5-pro",
+        generationConfig: {
+          maxOutputTokens: 300,
+        },
+      });
+
+      const prompt = `I am a client at YafuBarber, a premium grooming studio in Addis Ababa. My description: "${query}". 
+Act as an elite master barber and provide a concise, high-end recommendation for:
+1. Best haircut style for me
+2. Recommended hair products
+3. Maintenance schedule
+
+Keep it professional, stylish, and under 200 words.`;
+
+      const result = await model.generateContent(prompt);
+      const response = await result.response;
+      const text = response.text();
+
       setRecommendation(
-        data.recommendation ||
+        text ||
           "I'm having trouble coming up with a style right now. Why don't you visit us for a live consultation?"
       );
-    } catch (error) {
-      console.error(error);
+    } catch (error: any) {
+      console.error("AI Error:", error);
       setRecommendation(
-        "I'm having trouble coming up with a style right now. Why don't you visit us for a live consultation?"
+        "I'm having trouble connecting to the AI service. Please visit us at YafuBarber for a personal consultation!"
       );
     } finally {
       setLoading(false);

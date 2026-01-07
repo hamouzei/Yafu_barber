@@ -60,7 +60,9 @@ const App: React.FC = () => {
             </span>
             <h1 className="text-6xl md:text-8xl font-heading uppercase leading-none mb-8">
               Where Style <br />
-              <span className="text-brand-accent">Meets Mastery</span>
+              <span className="text-brand-accent font-subheading">
+                Meets Mastery
+              </span>
             </h1>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <button
@@ -148,7 +150,8 @@ const App: React.FC = () => {
                 About YafuBarber
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading uppercase mb-6 md:mb-8 leading-tight">
-                Where Fresh Cuts Meet Confidence
+                Where Fresh Cuts Meet{" "}
+                <span className="font-subheading">Confidence</span>
               </h2>
               <div className="space-y-5 md:space-y-8">
                 <div className="flex gap-4">
@@ -157,7 +160,7 @@ const App: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-heading uppercase text-base md:text-xl mb-1 md:mb-2">
-                      Skill You Can See
+                      Skill You Can <span className="font-subheading">See</span>
                     </h4>
                     <p className="text-brand-lightGray text-sm md:text-base">
                       Our barbers don't rush styles, they perfect them. From
@@ -172,7 +175,7 @@ const App: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-heading uppercase text-base md:text-xl mb-1 md:mb-2">
-                      Cuts That Fit You
+                      Cuts That Fit <span className="font-subheading">You</span>
                     </h4>
                     <p className="text-brand-lightGray text-sm md:text-base">
                       No copy-paste haircuts here. We listen, suggest, and
@@ -187,7 +190,8 @@ const App: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-heading uppercase text-base md:text-xl mb-1 md:mb-2">
-                      A Place You Want to Stay
+                      A Place You Want to{" "}
+                      <span className="font-subheading">Stay</span>
                     </h4>
                     <p className="text-brand-lightGray text-sm md:text-base">
                       Relaxed. Clean. Good energy. Step in, sit back, and enjoy
@@ -253,7 +257,8 @@ const App: React.FC = () => {
                   What We Offer
                 </span>
                 <h2 className="text-4xl md:text-5xl font-heading uppercase leading-tight">
-                  Tailored Excellence For <br /> Every Style
+                  Tailored Excellence For <br /> Every{" "}
+                  <span className="font-subheading">Style</span>
                 </h2>
               </div>
               <button
@@ -344,7 +349,8 @@ const App: React.FC = () => {
               Relax, Refresh, Rejuvenate
             </span>
             <h2 className="text-4xl md:text-6xl font-heading uppercase mb-10">
-              Ready For a Fresh Look? Book Your <br /> Appointment Now!
+              Ready For a Fresh Look? Book Your <br /> Appointment{" "}
+              <span className="font-subheading">Now!</span>
             </h2>
             <button
               onClick={() => setIsBookingModalOpen(true)}
@@ -369,7 +375,7 @@ const App: React.FC = () => {
               id="testimonials-heading"
               className="text-4xl md:text-5xl font-heading uppercase mb-16"
             >
-              Customer Satisfaction
+              Customer <span className="font-subheading">Satisfaction</span>
             </h2>
 
             <div className="overflow-hidden">
@@ -388,7 +394,7 @@ const App: React.FC = () => {
               id="team-heading"
               className="text-4xl md:text-5xl font-heading uppercase mb-16"
             >
-              Our Amazing Barbers
+              Our Amazing <span className="font-subheading">Barbers</span>
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8" role="list">
