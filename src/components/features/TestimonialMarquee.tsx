@@ -1,6 +1,6 @@
 import React from "react";
-import { TESTIMONIALS } from "../constants";
-import OptimizedImage from "./OptimizedImage";
+import { TESTIMONIALS } from "../../constants/index";
+import OptimizedImage from "../common/OptimizedImage";
 
 const TestimonialMarquee = () => {
   return (

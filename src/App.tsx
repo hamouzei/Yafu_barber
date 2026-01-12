@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Navbar from "./components/Navbar";
-import StyleConsultant from "./components/StyleConsultant";
-import BookingModal from "./components/BookingModal";
-import OptimizedImage from "./components/OptimizedImage";
-import NewsletterForm from "./components/NewsletterForm";
-import TestimonialMarquee from "./components/TestimonialMarquee";
-import { SERVICES, BARBERS, TESTIMONIALS } from "./constants";
+import Navbar from "./components/layout/Navbar";
+import StyleConsultant from "./components/features/StyleConsultant";
+import BookingModal from "./components/features/BookingModal";
+import OptimizedImage from "./components/common/OptimizedImage";
+import NewsletterForm from "./components/features/NewsletterForm";
+import TestimonialMarquee from "./components/features/TestimonialMarquee";
+import { SERVICES, BARBERS, TESTIMONIALS } from "./constants/index";
 import {
   Scissors,
   Calendar,

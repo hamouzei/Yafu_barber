@@ -1,4 +1,4 @@
-import { Service, Barber, Testimonial, BlogPost } from "./types";
+import { Service, Barber, Testimonial, BlogPost } from "../types/index";
 
 export const SERVICES: Service[] = [
   {
@@ -100,42 +100,42 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Marcus",
     text: "Perfect fade every time! 💯",
     rating: 5,
-    image: "/clint_photo/photo_2026-01-06_11-10-14.jpg",
+    image: "/client_photos/photo_2026-01-06_11-10-14.jpg",
   },
   {
     id: "t2",
     name: "Ryan",
     text: "The ambiance is excellent, service is personalized 👌",
     rating: 5,
-    image: "/clint_photo/photo_2026-01-06_11-10-44.jpg",
+    image: "/client_photos/photo_2026-01-06_11-10-44.jpg",
   },
   {
     id: "t3",
     name: "Gabriel",
     text: "Always leave feeling sharp and confident ✨",
     rating: 5,
-    image: "/clint_photo/photo_2026-01-06_11-10-58.jpg",
+    image: "/client_photos/photo_2026-01-06_11-10-58.jpg",
   },
   {
     id: "t4",
     name: "Yabsira",
     text: "ምርጥ የፀጉር አሠራር - እጅግ በጣም ንጹህ ስራ! 🔥",
     rating: 5,
-    image: "/clint_photo/20241018_124903.jpg",
+    image: "/client_photos/20241018_124903.jpg",
   },
   {
     id: "t5",
     name: "Daniel",
     text: "ከፍተኛ-ደረጃ አገልግሎት 💈",
     rating: 5,
-    image: "/clint_photo/20241018_124914.jpg",
+    image: "/client_photos/20241018_124914.jpg",
   },
   {
     id: "t6",
     name: "Boonaa",
     text: "Baayyee bareeda! Best barber experience 🙌",
     rating: 5,
-    image: "/clint_photo/photo_2026-01-06_11-10-14.jpg",
+    image: "/client_photos/photo_2026-01-06_11-10-14.jpg",
   },
 ];
 

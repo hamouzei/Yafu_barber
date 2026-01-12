@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { initGA, logPageView } from "../utils/analytics";
+import { initGA, logPageView } from "../../utils/analytics";
 
 export const AnalyticsProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
